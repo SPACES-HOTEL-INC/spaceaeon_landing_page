@@ -1,20 +1,18 @@
 /**
  * Spaceaeon — Centralized external routing
- *
- * All cross-domain destinations point to separate Vercel frontends.
- * Replace the placeholder URLs below with your real deployment URLs.
  */
 
-const VERCEL = 'https://vercel.app';
+const CLIENT_PLATFORM_URL = 'https://app.spaceaeon.online';
+const HM_OWNER_PLATFORM_URL = 'https://hm.spaceaeon.online';
 
 export const routes = {
   client: {
-    explore: `${VERCEL}`,
-    login: `${VERCEL}`,
+    explore: CLIENT_PLATFORM_URL,
+    login: CLIENT_PLATFORM_URL,
   },
   host: {
-    dashboard: `${VERCEL}`,
-    registration: `${VERCEL}`,
+    dashboard: HM_OWNER_PLATFORM_URL,
+    registration: HM_OWNER_PLATFORM_URL,
   },
 };
 
